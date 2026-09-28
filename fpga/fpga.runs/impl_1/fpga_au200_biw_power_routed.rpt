@@ -1,0 +1,233 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date             : Sun Sep 27 22:39:06 2026
+| Host             : atlas1 running 64-bit Ubuntu 22.04.5 LTS
+| Command          : report_power -file fpga_au200_biw_power_routed.rpt -pb fpga_au200_biw_power_summary_routed.pb -rpx fpga_au200_biw_power_routed.rpx
+| Design           : fpga_au200_biw
+| Device           : xcu200-fsgd2104-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+---------------+
+| Total On-Chip Power (W)  | 7.908         |
+| Design Power Budget (W)  | 160.000       |
+| Power Budget Margin (W)  | 152.092 (MET) |
+| Dynamic (W)              | 5.306         |
+| Device Static (W)        | 2.603         |
+| Effective TJA (C/W)      | 0.5           |
+| Max Ambient (C)          | 95.9          |
+| Junction Temperature (C) | 29.1          |
+| Confidence Level         | Medium        |
+| Setting File             | ---           |
+| Simulation Activity File | ---           |
+| Design Nets Matched      | NA            |
++--------------------------+---------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.165 |       38 |       --- |             --- |
+| CLB Logic                |     0.119 |    15160 |       --- |             --- |
+|   LUT as Logic           |     0.107 |     6646 |   1182240 |            0.56 |
+|   Register               |     0.011 |     6549 |   2364480 |            0.28 |
+|   CARRY8                 |    <0.001 |       64 |    147780 |            0.04 |
+|   LUT as Distributed RAM |    <0.001 |        4 |    591840 |           <0.01 |
+|   Others                 |     0.000 |      377 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |        8 |   1182240 |           <0.01 |
+| Signals                  |     0.154 |    13585 |       --- |             --- |
+| Block RAM                |     0.041 |       17 |      2160 |            0.79 |
+| MMCM                     |     0.088 |        0 |       --- |             --- |
+| I/O                      |     0.017 |        8 |       676 |            1.18 |
+| GTY                      |     4.723 |        8 |        24 |           33.33 |
+| Static Power             |     2.603 |          |           |                 |
+| Total                    |     7.908 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint     |       0.850 |     2.343 |       1.439 |      0.904 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.850 |     0.268 |       0.002 |      0.265 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.850 |     0.019 |       0.002 |      0.017 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     0.693 |       0.049 |      0.644 |       NA    | Unspecified | NA         |
+| Vccaux_io  |       1.800 |     0.193 |       0.008 |      0.185 |       NA    | Unspecified | NA         |
+| Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc     |       1.800 |     0.024 |       0.000 |      0.024 |       NA    | Unspecified | NA         |
+| MGTYAVcc   |       0.900 |     1.204 |       1.167 |      0.037 |       NA    | Unspecified | NA         |
+| MGTYAVtt   |       1.200 |     2.325 |       2.308 |      0.018 |       NA    | Unspecified | NA         |
+| MGTYVccaux |       1.800 |     0.090 |       0.088 |      0.002 |       NA    | Unspecified | NA         |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 0.5                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 0.7                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                            | Domain                                                                                                                                                                                                                                                                                    | Constraint (ns) |
++----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_125mhz_mmcm_out              | clk_125mhz_mmcm_out                                                                                                                                                                                                                                                                       |             8.0 |
+| clk_300mhz_0                     | clk_300mhz_0_p                                                                                                                                                                                                                                                                            |             3.3 |
+| gtwiz_userclk_rx_srcclk_out[0]   | qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0] |             2.6 |
+| gtwiz_userclk_rx_srcclk_out[0]_1 | qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_rx_srcclk_out[0]_2 | qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_rx_srcclk_out[0]_3 | qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_rx_srcclk_out[0]_4 | qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0] |             2.6 |
+| gtwiz_userclk_rx_srcclk_out[0]_5 | qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_rx_srcclk_out[0]_6 | qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_rx_srcclk_out[0]_7 | qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_rx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]   | qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0] |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]_1 | qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]_2 | qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]_3 | qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]_4 | qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0] |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]_5 | qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]_6 | qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0]   |             2.6 |
+| gtwiz_userclk_tx_srcclk_out[0]_7 | qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtwiz_userclk_tx_srcclk_out[0]   |             2.6 |
+| qpll0outclk_out[0]               | qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outclk_out[0]_1             | qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll0outclk_out[0]      |             0.1 |
+| qpll0outrefclk_out[0]            | qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.2 |
+| qpll0outrefclk_out[0]_1          | qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]   |             6.2 |
+| qpll1outclk_out[0]               | qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll1outclk_out[0]      |             0.2 |
+| qpll1outclk_out[0]_1             | qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll1outclk_out[0]      |             0.2 |
+| qpll1outrefclk_out[0]            | qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll1outrefclk_out[0]   |             6.2 |
+| qpll1outrefclk_out[0]_1          | qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/qpll1outrefclk_out[0]   |             6.2 |
+| qsfp0_mgt_refclk_1               | qsfp0_mgt_refclk_1_p                                                                                                                                                                                                                                                                      |             6.2 |
+| qsfp1_mgt_refclk_1               | qsfp1_mgt_refclk_1_p                                                                                                                                                                                                                                                                      |             6.2 |
+| txoutclkpcs_out[0]               | qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]             |             2.5 |
+| txoutclkpcs_out[0]_1             | qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]               |             2.5 |
+| txoutclkpcs_out[0]_2             | qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]               |             2.5 |
+| txoutclkpcs_out[0]_3             | qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]               |             2.5 |
+| txoutclkpcs_out[0]_4             | qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]             |             2.5 |
+| txoutclkpcs_out[0]_5             | qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]               |             2.5 |
+| txoutclkpcs_out[0]_6             | qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]               |             2.5 |
+| txoutclkpcs_out[0]_7             | qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_channel_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/txoutclkpcs_out[0]               |             2.5 |
++----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------------------+-----------+
+| Name                                          | Power (W) |
++-----------------------------------------------+-----------+
+| fpga_au200_biw                                |     5.306 |
+|   clk_300mhz_0_ibufg_inst                     |     0.004 |
+|   core_inst                                   |     0.232 |
+|     fifo_0_to_1_inst                          |     0.036 |
+|       packet_token_fifo_inst                  |     0.003 |
+|       reset_ctrl_inst                         |     0.002 |
+|       xpm_fifo_async_inst                     |     0.029 |
+|     fifo_1_to_0_inst                          |     0.034 |
+|       packet_token_fifo_inst                  |     0.003 |
+|       reset_ctrl_inst                         |     0.001 |
+|       xpm_fifo_async_inst                     |     0.028 |
+|     macs[0].eth_mac_10g_inst                  |     0.086 |
+|       axis_xgmii_rx_inst                      |     0.018 |
+|       axis_xgmii_tx_inst                      |     0.065 |
+|       pr_1                                    |     0.003 |
+|     macs[1].eth_mac_10g_inst                  |     0.076 |
+|       axis_xgmii_rx_inst                      |     0.019 |
+|       axis_xgmii_tx_inst                      |     0.054 |
+|       pr_1                                    |     0.003 |
+|   qsfp0_phy_quad_inst                         |     2.480 |
+|     phy1.eth_xcvr_phy_1                       |     0.641 |
+|       phy_inst                                |     0.047 |
+|       xcvr_gty_com_usp.eth_xcvr_gty_full_inst |     0.592 |
+|     phy2.eth_xcvr_phy_2                       |     0.612 |
+|       phy_inst                                |     0.020 |
+|       xcvr_gty.eth_xcvr_gty_channel_inst      |     0.592 |
+|     phy3.eth_xcvr_phy_3                       |     0.613 |
+|       phy_inst                                |     0.020 |
+|       xcvr_gty.eth_xcvr_gty_channel_inst      |     0.592 |
+|     phy4.eth_xcvr_phy_4                       |     0.615 |
+|       phy_inst                                |     0.022 |
+|       xcvr_gty.eth_xcvr_gty_channel_inst      |     0.592 |
+|   qsfp0_sync_reset_inst                       |     0.001 |
+|   qsfp1_phy_quad_inst                         |     2.482 |
+|     phy1.eth_xcvr_phy_1                       |     0.641 |
+|       phy_inst                                |     0.048 |
+|       xcvr_gty_com_usp.eth_xcvr_gty_full_inst |     0.592 |
+|     phy2.eth_xcvr_phy_2                       |     0.613 |
+|       phy_inst                                |     0.020 |
+|       xcvr_gty.eth_xcvr_gty_channel_inst      |     0.592 |
+|     phy3.eth_xcvr_phy_3                       |     0.613 |
+|       phy_inst                                |     0.020 |
+|       xcvr_gty.eth_xcvr_gty_channel_inst      |     0.592 |
+|     phy4.eth_xcvr_phy_4                       |     0.614 |
+|       phy_inst                                |     0.022 |
+|       xcvr_gty.eth_xcvr_gty_channel_inst      |     0.592 |
++-----------------------------------------------+-----------+
+
+

@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "/home/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../fpga.gen/sources_1/ip/packet_token_fifo/sim/packet_token_fifo.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

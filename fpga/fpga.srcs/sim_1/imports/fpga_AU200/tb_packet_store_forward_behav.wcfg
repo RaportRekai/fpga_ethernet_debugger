@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_packet_store_forward_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_packet_store_forward" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9,892.200 ns"></ZoomStartTime>
+      <ZoomEndTime time="10,041.201 ns"></ZoomEndTime>
+      <Cursor1Time time="9,917.200 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="177"></NameColumnWidth>
+      <ValueColumnWidth column_width="77"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/s_start_packet">
+      <obj_property name="ElementShortName">s_start_packet[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_start_packet[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/s_axis_tdata">
+      <obj_property name="ElementShortName">s_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/s_axis_tkeep">
+      <obj_property name="ElementShortName">s_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/s_axis_tvalid">
+      <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/s_axis_tlast">
+      <obj_property name="ElementShortName">s_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/s_axis_tuser">
+      <obj_property name="ElementShortName">s_axis_tuser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tuser[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/m_start_packet">
+      <obj_property name="ElementShortName">m_start_packet[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_start_packet[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/m_axis_tdata">
+      <obj_property name="ElementShortName">m_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/dut/write_cfh">
+      <obj_property name="ElementShortName">write_cfh</obj_property>
+      <obj_property name="ObjectShortName">write_cfh</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/m_axis_tkeep">
+      <obj_property name="ElementShortName">m_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/m_axis_tvalid">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/m_axis_tlast">
+      <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/m_axis_tuser">
+      <obj_property name="ElementShortName">m_axis_tuser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tuser[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/dut/bram_inst/r_add">
+      <obj_property name="ElementShortName">r_add[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_add[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/dut/write_beat_count">
+      <obj_property name="ElementShortName">write_beat_count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_beat_count[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/dut/bram_inst/data_out">
+      <obj_property name="ElementShortName">data_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/dut/analyse_packet_inst/mod_last_tkeep">
+      <obj_property name="ElementShortName">mod_last_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mod_last_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/dut/send_phase_shutdown_3">
+      <obj_property name="ElementShortName">send_phase_shutdown_3</obj_property>
+      <obj_property name="ObjectShortName">send_phase_shutdown_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/dut/cfh_header_stage_2">
+      <obj_property name="ElementShortName">cfh_header_stage_2</obj_property>
+      <obj_property name="ObjectShortName">cfh_header_stage_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/dut/cfh_header_stage_1">
+      <obj_property name="ElementShortName">cfh_header_stage_1</obj_property>
+      <obj_property name="ObjectShortName">cfh_header_stage_1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/dut/phase">
+      <obj_property name="ElementShortName">phase[1:0]</obj_property>
+      <obj_property name="ObjectShortName">phase[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/dut/send_phase_shutdown">
+      <obj_property name="ElementShortName">send_phase_shutdown</obj_property>
+      <obj_property name="ObjectShortName">send_phase_shutdown</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_packet_store_forward/dut/send_phase_shutdown_2">
+      <obj_property name="ElementShortName">send_phase_shutdown_2</obj_property>
+      <obj_property name="ObjectShortName">send_phase_shutdown_2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/out_pkt_count">
+      <obj_property name="ElementShortName">out_pkt_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_pkt_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/out_beat_count">
+      <obj_property name="ElementShortName">out_beat_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_beat_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/pkt1">
+      <obj_property name="ElementShortName">pkt1[0:1499][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pkt1[0:1499][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/pkt2">
+      <obj_property name="ElementShortName">pkt2[0:1499][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pkt2[0:1499][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/pkt3">
+      <obj_property name="ElementShortName">pkt3[0:63][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pkt3[0:63][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/temp_data">
+      <obj_property name="ElementShortName">temp_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/temp_keep">
+      <obj_property name="ElementShortName">temp_keep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_keep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/DATA_WIDTH">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/KEEP_WIDTH">
+      <obj_property name="ElementShortName">KEEP_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">KEEP_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_packet_store_forward/RX_USER_WIDTH">
+      <obj_property name="ElementShortName">RX_USER_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RX_USER_WIDTH[31:0]</obj_property>
+   </wvobject>
+</wave_config>

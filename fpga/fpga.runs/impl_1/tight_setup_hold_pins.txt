@@ -1,0 +1,36 @@
++================================+==================================+================================================================+
+| Launch Setup Clock             | Launch Hold Clock                | Pin                                                            |
++================================+==================================+================================================================+
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[2]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[63]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[58]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[60]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[13]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[1]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[50]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[9]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[52]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[7]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[61]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[57]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[5]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[6]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[0]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[55]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[4]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[62]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[54]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[51]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[59]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[15]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[53]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[10]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[3]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[12]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[56]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[48]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[14]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[8]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[49]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[11]/D |
++--------------------------------+----------------------------------+----------------------------------------------------------------+

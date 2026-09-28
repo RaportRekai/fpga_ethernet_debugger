@@ -1,0 +1,154 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sun Sep 27 22:39:00 2026
+| Host         : atlas1 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_methodology -file fpga_au200_biw_methodology_drc_routed.rpt -pb fpga_au200_biw_methodology_drc_routed.pb -rpx fpga_au200_biw_methodology_drc_routed.rpx
+| Design       : fpga_au200_biw
+| Device       : xcu200-fsgd2104-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 19
++----------+------------------+------------------------------------------------+------------+
+| Rule     | Severity         | Description                                    | Violations |
++----------+------------------+------------------------------------------------+------------+
+| TIMING-6 | Critical Warning | No common primary clock between related clocks | 4          |
+| TIMING-7 | Critical Warning | No common node between related clocks          | 4          |
+| LUTAR-1  | Warning          | LUT drives async reset alert                   | 2          |
+| TIMING-9 | Warning          | Unknown CDC Logic                              | 1          |
+| XDCH-2   | Warning          | Same min and max delay values on IO port       | 6          |
+| CLKC-40  | Advisory         | Substitute PLLE4 for MMCME4 check              | 1          |
+| CLKC-56  | Advisory         | MMCME4 with global clock driver has no LOC     | 1          |
++----------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks gtwiz_userclk_rx_srcclk_out[0] and gtwiz_userclk_tx_srcclk_out[0]_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_rx_srcclk_out[0]] -to [get_clocks gtwiz_userclk_tx_srcclk_out[0]_4]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks gtwiz_userclk_rx_srcclk_out[0]_4 and gtwiz_userclk_tx_srcclk_out[0] are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_rx_srcclk_out[0]_4] -to [get_clocks gtwiz_userclk_tx_srcclk_out[0]]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks gtwiz_userclk_tx_srcclk_out[0] and gtwiz_userclk_rx_srcclk_out[0]_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_tx_srcclk_out[0]] -to [get_clocks gtwiz_userclk_rx_srcclk_out[0]_4]
+Related violations: <none>
+
+TIMING-6#4 Critical Warning
+No common primary clock between related clocks  
+The clocks gtwiz_userclk_tx_srcclk_out[0]_4 and gtwiz_userclk_rx_srcclk_out[0] are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_tx_srcclk_out[0]_4] -to [get_clocks gtwiz_userclk_rx_srcclk_out[0]]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks gtwiz_userclk_rx_srcclk_out[0] and gtwiz_userclk_tx_srcclk_out[0]_4 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_rx_srcclk_out[0]] -to [get_clocks gtwiz_userclk_tx_srcclk_out[0]_4]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks gtwiz_userclk_rx_srcclk_out[0]_4 and gtwiz_userclk_tx_srcclk_out[0] are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_rx_srcclk_out[0]_4] -to [get_clocks gtwiz_userclk_tx_srcclk_out[0]]
+Related violations: <none>
+
+TIMING-7#3 Critical Warning
+No common node between related clocks  
+The clocks gtwiz_userclk_tx_srcclk_out[0] and gtwiz_userclk_rx_srcclk_out[0]_4 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_tx_srcclk_out[0]] -to [get_clocks gtwiz_userclk_rx_srcclk_out[0]_4]
+Related violations: <none>
+
+TIMING-7#4 Critical Warning
+No common node between related clocks  
+The clocks gtwiz_userclk_tx_srcclk_out[0]_4 and gtwiz_userclk_rx_srcclk_out[0] are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks gtwiz_userclk_tx_srcclk_out[0]_4] -to [get_clocks gtwiz_userclk_rx_srcclk_out[0]]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell sync_reset_125mhz_inst/sync_reg[3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[0]/PRE,
+qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[1]/PRE,
+qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[2]/PRE
+qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell sync_reset_125mhz_inst/sync_reg[3]_i_1__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[0]/PRE,
+qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[1]/PRE,
+qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[2]/PRE
+qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_fs[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc (Line: 36)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_fs[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc (Line: 36)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_refclk_reset' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc (Line: 36)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp1_fs[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp1_modsell qsfp1_resetl qsfp1_lpmode qsfp1_refclk_reset {qsfp1_fs[*]}}]
+/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc (Line: 47)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp1_fs[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp1_modsell qsfp1_resetl qsfp1_lpmode qsfp1_refclk_reset {qsfp1_fs[*]}}]
+/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc (Line: 47)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp1_refclk_reset' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp1_modsell qsfp1_resetl qsfp1_lpmode qsfp1_refclk_reset {qsfp1_fs[*]}}]
+/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc (Line: 47)
+Related violations: <none>
+
+CLKC-40#1 Advisory
+Substitute PLLE4 for MMCME4 check  
+The MMCME4 cell clk_mmcm_inst has a single input clock whose source driver, IBUFCTRL clk_300mhz_0_ibufg_inst/IBUFCTRL_INST (in clk_300mhz_0_ibufg_inst macro), is not optimally located and the MMCM has a configuration which could be accommodated by a PLL.  Consider changing the MMCM to a PLL which could align better with the input clock driver.
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell clk_mmcm_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) clk_300mhz_0_bufg_inst and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+

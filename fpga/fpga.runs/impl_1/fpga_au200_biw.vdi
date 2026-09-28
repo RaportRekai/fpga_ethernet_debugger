@@ -1,0 +1,1550 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Sep 27 22:32:07 2026
+# Process ID: 459433
+# Current directory: /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1
+# Command line: vivado -log fpga_au200_biw.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga_au200_biw.tcl -notrace
+# Log file: /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.vdi
+# Journal file: /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/vivado.jou
+# Running On: atlas1, OS: Linux, CPU Frequency: 3899.978 MHz, CPU Physical cores: 29, Host memory: 201336 MB
+#-----------------------------------------------------------
+source fpga_au200_biw.tcl -notrace
+Command: link_design -top fpga_au200_biw -part xcu200-fsgd2104-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo.dcp' for cell 'core_inst/fifo_0_to_1_inst/packet_token_fifo_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_full/eth_xcvr_gty_full.dcp' for cell 'qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/eth_xcvr_gty_channel.dcp' for cell 'qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2379.672 ; gain = 0.000 ; free physical = 154467 ; free virtual = 218997
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_full/synth/eth_xcvr_gty_full.xdc] for cell 'qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_full/synth/eth_xcvr_gty_full.xdc] for cell 'qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_full/synth/eth_xcvr_gty_full.xdc] for cell 'qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_full/synth/eth_xcvr_gty_full.xdc] for cell 'qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/eth_xcvr_gty_channel/synth/eth_xcvr_gty_channel.xdc] for cell 'qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/xcvr_gty.eth_xcvr_gty_channel_inst/inst'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo.xdc] for cell 'core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo.xdc] for cell 'core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo.xdc] for cell 'core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo.xdc] for cell 'core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_1_p'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_1_n'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_1_p'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:21]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk_300mhz_1_p]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:21]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_2_p'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_2_n'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_2_p'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:27]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk_300mhz_2_p]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:27]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_3_p'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_3_n'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_300mhz_3_p'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:33]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk_300mhz_3_p]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:33]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:46]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports {led[*]}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:46]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:47]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {led[*]}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:47]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:61]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports {sw[*]}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:61]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:62]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {sw[*]}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:62]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'msp_gpio[0]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'msp_gpio[1]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'msp_gpio[2]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'msp_gpio[3]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'msp_uart_txd'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'msp_uart_rxd'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'msp_uart_txd'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:81]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports msp_uart_txd]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:81]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'msp_uart_txd'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:82]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports msp_uart_txd]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:82]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'msp_gpio[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'msp_uart_rxd'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:83]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports {{msp_gpio[*]} msp_uart_rxd}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:83]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'msp_gpio[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'msp_uart_rxd'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:84]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {{msp_gpio[*]} msp_uart_rxd}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:84]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_modsell'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_resetl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_modprsl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_intl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_lpmode'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_modsell'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_resetl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_lpmode'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_modsell'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_resetl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_lpmode'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_modprsl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_intl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:127]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports {qsfp0_modprsl qsfp0_intl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:127]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_modprsl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_intl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:128]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {qsfp0_modprsl qsfp0_intl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:128]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modsell'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_resetl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_lpmode'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:170]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports {qsfp1_modprsl qsfp1_intl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:170]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_modprsl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_intl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:171]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {qsfp1_modprsl qsfp1_intl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:171]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'i2c_scl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2c_sda'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2c_sda'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'i2c_scl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:178]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports {i2c_sda i2c_scl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:178]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'i2c_sda'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'i2c_scl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:179]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {i2c_sda i2c_scl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:179]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'i2c_sda'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'i2c_scl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:180]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports {i2c_sda i2c_scl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:180]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'i2c_sda'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'i2c_scl'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:181]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {i2c_sda i2c_scl}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:181]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_p[0]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_n[0]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_p[0]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_n[0]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_p[1]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_n[1]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_p[1]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_n[1]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_p[2]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_n[2]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_p[2]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_n[2]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_p[3]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_n[3]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_p[3]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_n[3]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_p[4]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_n[4]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_p[4]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_n[4]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_p[5]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_n[5]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_p[5]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_n[5]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_p[6]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_rx_n[6]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_p[6]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_tx_n[6]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:211]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:232]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:233]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:234]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:236]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:237]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:242]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:243]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:244]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:245]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:246]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:247]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:248]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports pcie_refclk_p]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:253]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports pcie_reset_n]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:255]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports pcie_reset_n]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:256]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:260]
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc]
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:8]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:9]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:10]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:11]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:12]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:20]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:21]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:22]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:23]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:24]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:29]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:30]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:31]
+CRITICAL WARNING: [Vivado 12-1433] Expecting a non-empty list of cells to be added to the pblock.  Please verify the correctness of the <cells> argument. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc:32]
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/placement_au200.xdc]
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/cfgmclk.xdc]
+WARNING: [Vivado 12-508] No pins matched 'startupe3_inst/CFGMCLK'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/cfgmclk.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_pins startupe3_inst/CFGMCLK]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/cfgmclk.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/cfgmclk.xdc]
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/boot.xdc]
+WARNING: [Vivado 12-180] No cells matched 'fpga_boot_sync_reg_0_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/boot.xdc:3]
+WARNING: [Vivado 12-180] No cells matched 'fpga_boot_sync_reg_1_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/boot.xdc:3]
+WARNING: [Vivado 12-508] No pins matched 'fpga_boot_sync_reg_0_reg/D'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/boot.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins fpga_boot_sync_reg_0_reg/D]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/boot.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/boot.xdc]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axi/syn/vivado/axil_cdc.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == axil_cdc_rd || REF_NAME == axil_cdc_rd || ORIG_REF_NAME == axil_cdc_wr || REF_NAME == axil_cdc_wr)}'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axi/syn/vivado/axil_cdc.tcl:23]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axi/syn/vivado/axil_cdc.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axis/syn/vivado/axis_async_fifo.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == axis_async_fifo || REF_NAME == axis_async_fifo)}'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axis/syn/vivado/axis_async_fifo.tcl:23]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axis/syn/vivado/axis_async_fifo.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axis/syn/vivado/sync_reset.tcl]
+Inserting timing constraints for sync_reset instance qsfp0_sync_reset_inst
+Inserting timing constraints for sync_reset instance qsfp1_sync_reset_inst
+Inserting timing constraints for sync_reset instance sync_reset_125mhz_inst
+Inserting timing constraints for sync_reset instance qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/rx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst
+Inserting timing constraints for sync_reset instance qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/tx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/rx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/rx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/rx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/rx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/sync_reset_common_reset_inst
+Inserting timing constraints for sync_reset instance qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/tx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/rx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/rx_reset_sync_inst
+Inserting timing constraints for sync_reset instance qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/rx_reset_sync_inst
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/axis/syn/vivado/sync_reset.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/eth/syn/vivado/ptp_td_leaf.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -regexp -filter {(ORIG_REF_NAME =~ "ptp_td_leaf(__\w+__\d+)?" ||
+REF_NAME =~ "ptp_td_leaf(__\w+__\d+)?")}'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/eth/syn/vivado/ptp_td_leaf.tcl:23]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/lib/eth/syn/vivado/ptp_td_leaf.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == mqnic_port || REF_NAME == mqnic_port)}'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_ptp_clock.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == mqnic_ptp_clock || REF_NAME == mqnic_ptp_clock)}'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_ptp_clock.tcl:6]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_ptp_clock.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_rb_clk_info.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == mqnic_rb_clk_info || REF_NAME == mqnic_rb_clk_info)}'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_rb_clk_info.tcl:6]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_rb_clk_info.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == rb_drp || REF_NAME == rb_drp)}'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl:6]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl]
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+INFO: [Timing 38-2] Deriving generated clocks [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbssel_drp_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbssel_sync_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txpolarity_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txpolarity_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txinhibit_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txinhibit_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_tx_pd_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txelecidle_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxpolarity_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxpolarity_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbssel_drp_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbssel_sync_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_3_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_3_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_4_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_5_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbslocked_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbslocked_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbslocked_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_block_lock_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_block_lock_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_block_lock_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_high_ber_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_high_ber_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_high_ber_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_status_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_status_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_status_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbssel_drp_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbssel_sync_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txpolarity_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txpolarity_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txinhibit_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txinhibit_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_tx_pd_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txelecidle_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxpolarity_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxpolarity_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbssel_drp_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbssel_sync_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_3_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_3_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_4_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_5_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbslocked_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbslocked_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbslocked_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_block_lock_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_block_lock_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_block_lock_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_high_ber_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_high_ber_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_high_ber_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_status_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_status_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'phy_rx_status_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbssel_drp_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbssel_sync_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txprbsforceerr_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txpolarity_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txpolarity_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txinhibit_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txinhibit_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_tx_pd_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_txelecidle_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxpolarity_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxpolarity_sync_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbssel_drp_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbssel_sync_reg_reg[*]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_drp_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbscntreset_sync_2_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'gt_rxprbserr_sync_1_reg_reg'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3
+Inserting timing constraints for eth_xcvr_phy_10g_gty_wrapper instance qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl]
+Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl]
+Finished Sourcing Tcl File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl]
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_ports {led[*]}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:24]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {led[*]}]'. [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:25]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:36]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:47]
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc]
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo_clocks.xdc] for cell 'core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo_clocks.xdc] for cell 'core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0'
+Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo_clocks.xdc] for cell 'core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0'
+Finished Parsing XDC File [/home/dan/CFH/CFH2.0/CFH2.0/fpga.gen/sources_1/ip/packet_token_fifo/packet_token_fifo_clocks.xdc] for cell 'core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0'
+INFO: [Project 1-1714] 36 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: cms_cms_subsystem_0_0
+Generating merged BMM file for the design top 'fpga_au200_biw'...
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: bd_fb99
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3083.973 ; gain = 0.000 ; free physical = 154116 ; free virtual = 218647
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+20 Infos, 204 Warnings, 140 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3083.973 ; gain = 1750.207 ; free physical = 154116 ; free virtual = 218647
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3099.980 ; gain = 16.008 ; free physical = 154118 ; free virtual = 218650
+
+Starting Logic Optimization Task
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:36]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:47]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2 into driver instance qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2__0 into driver instance qsfp0_phy_quad_inst/phy2.eth_xcvr_phy_2/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2__0, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2__1 into driver instance qsfp0_phy_quad_inst/phy3.eth_xcvr_phy_3/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2__1, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2__2 into driver instance qsfp0_phy_quad_inst/phy4.eth_xcvr_phy_4/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2__2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2__3 into driver instance qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2__3, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2__4 into driver instance qsfp1_phy_quad_inst/phy2.eth_xcvr_phy_2/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2__4, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2__5 into driver instance qsfp1_phy_quad_inst/phy3.eth_xcvr_phy_3/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2__5, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/error_count_reg[3]_i_2__6 into driver instance qsfp1_phy_quad_inst/phy4.eth_xcvr_phy_4/phy_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_watchdog_inst/serdes_rx_reset_req_reg_i_2__6, which resulted in an inversion of 5 pins
+INFO: [Opt 31-138] Pushed 27 inverter(s) to 156 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1915d9bef
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.96 . Memory (MB): peak = 3279.848 ; gain = 26.000 ; free physical = 153866 ; free virtual = 218397
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 53 cells
+INFO: [Opt 31-1021] In phase Retarget, 14 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 223304c20
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3279.848 ; gain = 26.000 ; free physical = 153866 ; free virtual = 218397
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 8 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 14 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 18e3b657d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3279.848 ; gain = 26.000 ; free physical = 153866 ; free virtual = 218397
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 715 cells
+INFO: [Opt 31-1021] In phase Sweep, 60 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 18e3b657d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3279.848 ; gain = 26.000 ; free physical = 153866 ; free virtual = 218397
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 18e3b657d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3279.848 ; gain = 26.000 ; free physical = 153866 ; free virtual = 218397
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+INFO: [Opt 31-1555] control_set_opt supports Versal devices only, and device xcu200 is unsupported
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 18e3b657d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3279.848 ; gain = 26.000 ; free physical = 153866 ; free virtual = 218397
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               6  |              53  |                                             14  |
+|  Constant propagation         |               0  |               8  |                                             14  |
+|  Sweep                        |               0  |             715  |                                             60  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             20  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3279.848 ; gain = 0.000 ; free physical = 153866 ; free virtual = 218398
+Ending Logic Optimization Task | Checksum: 1ab5f4e41
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3279.848 ; gain = 26.000 ; free physical = 153866 ; free virtual = 218398
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3279.848 ; gain = 0.000 ; free physical = 153867 ; free virtual = 218398
+Ending Netlist Obfuscation Task | Checksum: 1ab5f4e41
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3279.848 ; gain = 0.000 ; free physical = 153867 ; free virtual = 218398
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 204 Warnings, 140 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:36]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:47]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3356.621 ; gain = 58.863 ; free physical = 153837 ; free virtual = 218374
+INFO: [Common 17-1381] The checkpoint '/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file fpga_au200_biw_drc_opted.rpt -pb fpga_au200_biw_drc_opted.pb -rpx fpga_au200_biw_drc_opted.rpx
+Command: report_drc -file fpga_au200_biw_drc_opted.rpt -pb fpga_au200_biw_drc_opted.pb -rpx fpga_au200_biw_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3537.520 ; gain = 0.000 ; free physical = 153680 ; free virtual = 218216
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: fcbd7bc9
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3537.520 ; gain = 0.000 ; free physical = 153680 ; free virtual = 218216
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3537.520 ; gain = 0.000 ; free physical = 153680 ; free virtual = 218216
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1c9baeb9f
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 4469.285 ; gain = 931.766 ; free physical = 152976 ; free virtual = 217512
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2b0a2f78b
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 4870.516 ; gain = 1332.996 ; free physical = 152582 ; free virtual = 217117
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2b0a2f78b
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 4870.516 ; gain = 1332.996 ; free physical = 152582 ; free virtual = 217117
+Phase 1 Placer Initialization | Checksum: 2b0a2f78b
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:36 . Memory (MB): peak = 4870.516 ; gain = 1332.996 ; free physical = 152582 ; free virtual = 217117
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1e80b7bd0
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:42 . Memory (MB): peak = 4878.520 ; gain = 1341.000 ; free physical = 152631 ; free virtual = 217166
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1dad2c162
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:47 . Memory (MB): peak = 4878.520 ; gain = 1341.000 ; free physical = 152459 ; free virtual = 216994
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1dad2c162
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:51 . Memory (MB): peak = 5314.691 ; gain = 1777.172 ; free physical = 152166 ; free virtual = 216701
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 234704e88
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 5344.707 ; gain = 1807.188 ; free physical = 152173 ; free virtual = 216709
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 234704e88
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 5344.707 ; gain = 1807.188 ; free physical = 152173 ; free virtual = 216709
+Phase 2.1.1 Partition Driven Placement | Checksum: 234704e88
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 5344.707 ; gain = 1807.188 ; free physical = 152173 ; free virtual = 216709
+Phase 2.1 Floorplanning | Checksum: 234704e88
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 5344.707 ; gain = 1807.188 ; free physical = 152173 ; free virtual = 216709
+
+Phase 2.2 Physical Synthesis After Floorplan
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5344.707 ; gain = 0.000 ; free physical = 152173 ; free virtual = 216709
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                         |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  PSIP Post Floorplan SLR Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis After Floorplan | Checksum: 234704e88
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 5344.707 ; gain = 1807.188 ; free physical = 152173 ; free virtual = 216709
+
+Phase 2.3 Update Timing before SLR Path Opt
+Phase 2.3 Update Timing before SLR Path Opt | Checksum: 234704e88
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 5344.707 ; gain = 1807.188 ; free physical = 152173 ; free virtual = 216709
+
+Phase 2.4 Post-Processing in Floorplanning
+Phase 2.4 Post-Processing in Floorplanning | Checksum: 2948abe34
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 5344.707 ; gain = 1807.188 ; free physical = 152173 ; free virtual = 216709
+
+Phase 2.5 Global Placement Core
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 23399b53f
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:55 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152083 ; free virtual = 216619
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 66 LUTNM shape to break, 931 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 37, two critical 29, total 66, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 406 nets or LUTs. Breaked 66 LUTs, combined 340 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-69] No nets found for rewiring optimization.
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5917.762 ; gain = 0.000 ; free physical = 152105 ; free virtual = 216640
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           66  |            340  |                   406  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           66  |            340  |                   406  |           0  |          10  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 116de0cc0
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:01:56 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152107 ; free virtual = 216642
+Phase 2.5 Global Placement Core | Checksum: 1255bc7a4
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:05 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152119 ; free virtual = 216655
+Phase 2 Global Placement | Checksum: 1255bc7a4
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:05 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152148 ; free virtual = 216684
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1253f5651
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:02:10 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152194 ; free virtual = 216730
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 176cecb05
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:02:10 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152167 ; free virtual = 216703
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 138b216b3
+
+Time (s): cpu = 00:03:48 ; elapsed = 00:02:13 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151851 ; free virtual = 216387
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 1e9630502
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:02:14 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151851 ; free virtual = 216387
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 1fabf63f7
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:02:16 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151863 ; free virtual = 216399
+Phase 3.3.3 Slice Area Swap | Checksum: 13a34aad1
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:02:18 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151740 ; free virtual = 216276
+Phase 3.3 Small Shape DP | Checksum: f842e6e0
+
+Time (s): cpu = 00:03:57 ; elapsed = 00:02:19 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151863 ; free virtual = 216399
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 16903f561
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:20 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151863 ; free virtual = 216399
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 198971aa3
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:20 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151870 ; free virtual = 216406
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 158a32fff
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:02:27 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151959 ; free virtual = 216495
+Phase 3 Detail Placement | Checksum: 158a32fff
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:02:27 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151959 ; free virtual = 216495
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:36]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:47]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19c83060c
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.760 | TNS=-1.144 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1fda14026
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.26 . Memory (MB): peak = 5917.762 ; gain = 0.000 ; free physical = 151869 ; free virtual = 216405
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 181e2ef0a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.38 . Memory (MB): peak = 5917.762 ; gain = 0.000 ; free physical = 151869 ; free virtual = 216405
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19c83060c
+
+Time (s): cpu = 00:04:27 ; elapsed = 00:02:35 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151877 ; free virtual = 216413
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 19c83060c
+
+Time (s): cpu = 00:04:27 ; elapsed = 00:02:35 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 151877 ; free virtual = 216413
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.059. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 1370214a7
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:02:53 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152094 ; free virtual = 216629
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=0.059. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 1370214a7
+
+Time (s): cpu = 00:04:47 ; elapsed = 00:02:53 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152092 ; free virtual = 216628
+
+Time (s): cpu = 00:04:47 ; elapsed = 00:02:53 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152094 ; free virtual = 216630
+Phase 4.1 Post Commit Optimization | Checksum: 1370214a7
+
+Time (s): cpu = 00:04:47 ; elapsed = 00:02:53 . Memory (MB): peak = 5917.762 ; gain = 2380.242 ; free physical = 152094 ; free virtual = 216630
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152184 ; free virtual = 216720
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1e5257aee
+
+Time (s): cpu = 00:05:17 ; elapsed = 00:03:20 . Memory (MB): peak = 5941.250 ; gain = 2403.730 ; free physical = 152244 ; free virtual = 216780
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1e5257aee
+
+Time (s): cpu = 00:05:17 ; elapsed = 00:03:20 . Memory (MB): peak = 5941.250 ; gain = 2403.730 ; free physical = 152244 ; free virtual = 216780
+Phase 4.3 Placer Reporting | Checksum: 1e5257aee
+
+Time (s): cpu = 00:05:17 ; elapsed = 00:03:20 . Memory (MB): peak = 5941.250 ; gain = 2403.730 ; free physical = 152244 ; free virtual = 216780
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152244 ; free virtual = 216780
+
+Time (s): cpu = 00:05:17 ; elapsed = 00:03:20 . Memory (MB): peak = 5941.250 ; gain = 2403.730 ; free physical = 152244 ; free virtual = 216780
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 209b4ebf6
+
+Time (s): cpu = 00:05:17 ; elapsed = 00:03:20 . Memory (MB): peak = 5941.250 ; gain = 2403.730 ; free physical = 152244 ; free virtual = 216780
+Ending Placer Task | Checksum: 1bf277598
+
+Time (s): cpu = 00:05:17 ; elapsed = 00:03:20 . Memory (MB): peak = 5941.250 ; gain = 2403.730 ; free physical = 152246 ; free virtual = 216781
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 204 Warnings, 140 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:05:22 ; elapsed = 00:03:21 . Memory (MB): peak = 5941.250 ; gain = 2403.730 ; free physical = 152835 ; free virtual = 217371
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.73 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152811 ; free virtual = 217366
+INFO: [Common 17-1381] The checkpoint '/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file fpga_au200_biw_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.51 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152752 ; free virtual = 217294
+INFO: [runtcl-4] Executing : report_utilization -file fpga_au200_biw_utilization_placed.rpt -pb fpga_au200_biw_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file fpga_au200_biw_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.19 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152742 ; free virtual = 217284
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.98 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152765 ; free virtual = 217306
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+122 Infos, 204 Warnings, 140 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.71 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152739 ; free virtual = 217299
+INFO: [Common 17-1381] The checkpoint '/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw_physopt.dcp' has been generated.
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 66b71a15 ConstDB: 0 ShapeSum: aa4cf53c RouteDB: ae236647
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152352 ; free virtual = 216899
+Post Restoration Checksum: NetGraph: 676c2b13 NumContArr: 157c82f8 Constraints: 972de8e3 Timing: 0
+Phase 1 Build RT Design | Checksum: 1141696ee
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152416 ; free virtual = 216963
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1141696ee
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152282 ; free virtual = 216829
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1141696ee
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 5941.250 ; gain = 0.000 ; free physical = 152282 ; free virtual = 216829
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1568232fc
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 151972 ; free virtual = 216519
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2cec29455
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 151985 ; free virtual = 216532
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.120  | TNS=0.000  | WHS=-0.331 | THS=-38.691|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 22808c108
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:15 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 151976 ; free virtual = 216523
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.120  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 22ffdf8a7
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:15 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 151976 ; free virtual = 216523
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00148561 %
+  Global Horizontal Routing Utilization  = 0.000457821 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 13599
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 9719
+  Number of Partially Routed Nets     = 3880
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2a464e36f
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:17 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 151876 ; free virtual = 216424
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2a464e36f
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:17 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 151877 ; free virtual = 216424
+Phase 3 Initial Routing | Checksum: 1b2bf5a49
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:21 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 151890 ; free virtual = 216438
+
+INFO: [Route 35-449] Initial Estimated Congestion
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+|           |___________________|___________________|___________________|
+| Direction | Size   | % Tiles  | Size   | % Tiles  | Size   | % Tiles  |
+|___________|________|__________|________|__________|________|__________|
+|      NORTH|     1x1|      0.00|     1x1|      0.00|     4x4|      0.05|
+|___________|________|__________|________|__________|________|__________|
+|      SOUTH|     2x2|      0.01|     1x1|      0.00|     8x8|      0.06|
+|___________|________|__________|________|__________|________|__________|
+|       EAST|     4x4|      0.03|     4x4|      0.02|   16x16|      0.10|
+|___________|________|__________|________|__________|________|__________|
+|       WEST|     1x1|      0.00|     1x1|      0.00|     4x4|      0.05|
+|___________|________|__________|________|__________|________|__________|
+Congestion Report
+SHORT Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+EAST
+	INT_X88Y671->INT_X103Y678 (CLEM_X88Y671->CLEL_R_X103Y678)
+	INT_X96Y676->INT_X103Y683 (CLEM_X96Y676->CLEL_R_X103Y683)
+	INT_X88Y668->INT_X95Y675 (CLEM_X88Y668->CLEL_R_X95Y675)
+	INT_X96Y675->INT_X103Y682 (CLEM_X96Y675->CLEL_R_X103Y682)
+	INT_X96Y674->INT_X103Y681 (CLEM_X96Y674->CLEL_R_X103Y681)
+INFO: [Route 35-580] Design has 32 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++================================+==================================+================================================================+
+| Launch Setup Clock             | Launch Hold Clock                | Pin                                                            |
++================================+==================================+================================================================+
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[2]/D  |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[63]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[58]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[60]/D |
+| gtwiz_userclk_rx_srcclk_out[0] | gtwiz_userclk_tx_srcclk_out[0]_4 | core_inst/macs[0].eth_mac_10g_inst/pr_1/m_axis_tdata_reg[13]/D |
++--------------------------------+----------------------------------+----------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4187
+ Number of Nodes with overlaps = 875
+ Number of Nodes with overlaps = 284
+ Number of Nodes with overlaps = 119
+ Number of Nodes with overlaps = 39
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.108 | TNS=-0.496 | WHS=0.014  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1e0e4ff67
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:00:58 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152041 ; free virtual = 216589
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 316
+ Number of Nodes with overlaps = 85
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.075 | TNS=-0.132 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 361cd19aa
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:09 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152182 ; free virtual = 216730
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 219
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.067 | TNS=-0.110 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 222969c92
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:17 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152238 ; free virtual = 216785
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 220
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.031 | TNS=-0.044 | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 21ae293b3
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:32 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152276 ; free virtual = 216823
+
+Phase 4.5 Global Iteration 4
+ Number of Nodes with overlaps = 210
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.004 | TNS=-0.004 | WHS=N/A    | THS=N/A    |
+
+Phase 4.5 Global Iteration 4 | Checksum: 1b9c97670
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:43 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152283 ; free virtual = 216830
+
+Phase 4.6 Global Iteration 5
+ Number of Nodes with overlaps = 160
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.039 | TNS=-0.050 | WHS=N/A    | THS=N/A    |
+
+Phase 4.6 Global Iteration 5 | Checksum: 24b59473b
+
+Time (s): cpu = 00:03:43 ; elapsed = 00:01:53 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152272 ; free virtual = 216819
+Phase 4 Rip-up And Reroute | Checksum: 24b59473b
+
+Time (s): cpu = 00:03:43 ; elapsed = 00:01:53 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152272 ; free virtual = 216819
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1d003fea8
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:01:54 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152294 ; free virtual = 216841
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.004 | TNS=-0.004 | WHS=0.014  | THS=0.000  |
+
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 2451374eb
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:55 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152275 ; free virtual = 216823
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.004 | TNS=-0.004 | WHS=0.014  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 23409fb7d
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:56 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152261 ; free virtual = 216809
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 23409fb7d
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:56 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152261 ; free virtual = 216809
+Phase 5 Delay and Skew Optimization | Checksum: 23409fb7d
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:56 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152261 ; free virtual = 216809
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 20e08c8fd
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:01:57 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152259 ; free virtual = 216807
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.004 | TNS=-0.004 | WHS=0.014  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 20086d0db
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:01:57 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152259 ; free virtual = 216807
+Phase 6 Post Hold Fix | Checksum: 20086d0db
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:01:57 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152259 ; free virtual = 216807
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.176035 %
+  Global Horizontal Routing Utilization  = 0.180929 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 56.338%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 55.9242%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 89.4231%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_X98Y681 -> INT_X98Y681
+West Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.333333 Sparse Ratio: 0.75
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1f8de71b3
+
+Time (s): cpu = 00:03:59 ; elapsed = 00:01:58 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152261 ; free virtual = 216808
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1f8de71b3
+
+Time (s): cpu = 00:03:59 ; elapsed = 00:01:58 . Memory (MB): peak = 5941.273 ; gain = 0.023 ; free physical = 152253 ; free virtual = 216801
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTYE4_COMMON_X1Y11/COM0_REFCLKOUT1
+INFO: [Route 35-467] Router swapped GT pin qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST/GTREFCLK01 to physical pin GTYE4_COMMON_X1Y11/COM2_REFCLKOUT1
+INFO: [Route 35-467] Router swapped GT pin qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTYE4_COMMON_X1Y12/COM0_REFCLKOUT1
+INFO: [Route 35-467] Router swapped GT pin qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST/GTREFCLK01 to physical pin GTYE4_COMMON_X1Y12/COM2_REFCLKOUT1
+Phase 9 Depositing Routes | Checksum: 1f8de71b3
+
+Time (s): cpu = 00:04:01 ; elapsed = 00:01:59 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152251 ; free virtual = 216799
+
+Phase 10 Leaf Clock Prog Delay Opt
+
+Phase 10.1 Hold Fix Iter
+
+Phase 10.1.1 Update Timing
+Phase 10.1.1 Update Timing | Checksum: 2910c73b1
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:02:03 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152259 ; free virtual = 216806
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.011 | TNS=-0.011 | WHS=0.014  | THS=0.000  |
+
+Phase 10.1 Hold Fix Iter | Checksum: 2d7075ec8
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:02:03 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152259 ; free virtual = 216806
+Phase 10 Leaf Clock Prog Delay Opt | Checksum: 215065930
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:02:05 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152272 ; free virtual = 216820
+
+Phase 11 Depositing Routes
+Phase 11 Depositing Routes | Checksum: 215065930
+
+Time (s): cpu = 00:04:22 ; elapsed = 00:02:06 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152254 ; free virtual = 216801
+
+Phase 12 Resolve XTalk
+Phase 12 Resolve XTalk | Checksum: 215065930
+
+Time (s): cpu = 00:04:23 ; elapsed = 00:02:06 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152255 ; free virtual = 216802
+
+Phase 13 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-0.012 | TNS=-0.012 | WHS=0.014  | THS=0.000  |
+
+Phase 13 Post Router Timing | Checksum: 278537172
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:02:07 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152260 ; free virtual = 216808
+Skip laguna hold fix in PhysOpt in Router as non-negative WHS value: 1.37781e-11 .
+Time taken to check if laguna hold fix is required (in secs): 0
+
+Phase 14 Physical Synthesis in Router
+
+Phase 14.1 Physical Synthesis Initialization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.012 | TNS=-0.012 | WHS=0.014 | THS=0.000 |
+Phase 14.1 Physical Synthesis Initialization | Checksum: 278537172
+
+Time (s): cpu = 00:05:02 ; elapsed = 00:02:37 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 151730 ; free virtual = 216278
+
+Phase 14.2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.012 | TNS=-0.012 | WHS=0.014 | THS=0.000 |
+INFO: [Physopt 32-735] Processed net core_inst/macs[1].eth_mac_10g_inst/axis_xgmii_rx_inst/m_axis_tuser_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.012 | TNS=0.000 | WHS=0.014 | THS=0.000 |
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.012 | TNS=0.000 | WHS=0.014 | THS=0.000 |
+Phase 14.2 Critical Path Optimization | Checksum: 20fec6937
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:02:38 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 151586 ; free virtual = 216134
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5957.281 ; gain = 0.000 ; free physical = 151606 ; free virtual = 216154
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=0.012 | TNS=0.000 | WHS=0.014 | THS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5957.281 ; gain = 0.000 ; free physical = 151608 ; free virtual = 216156
+Phase 14 Physical Synthesis in Router | Checksum: 20fec6937
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:39 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 151819 ; free virtual = 216367
+
+Phase 15 Route finalize
+Phase 15 Route finalize | Checksum: 20fec6937
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:39 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 151819 ; free virtual = 216367
+INFO: [Route 35-61] The design met the timing requirement.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:02:40 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152434 ; free virtual = 216982
+INFO: [Common 17-83] Releasing license: Implementation
+158 Infos, 204 Warnings, 140 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:10 ; elapsed = 00:02:41 . Memory (MB): peak = 5957.281 ; gain = 16.031 ; free physical = 152434 ; free virtual = 216982
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.84 . Memory (MB): peak = 5957.281 ; gain = 0.000 ; free physical = 152394 ; free virtual = 216964
+INFO: [Common 17-1381] The checkpoint '/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file fpga_au200_biw_drc_routed.rpt -pb fpga_au200_biw_drc_routed.pb -rpx fpga_au200_biw_drc_routed.rpx
+Command: report_drc -file fpga_au200_biw_drc_routed.rpt -pb fpga_au200_biw_drc_routed.pb -rpx fpga_au200_biw_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file fpga_au200_biw_methodology_drc_routed.rpt -pb fpga_au200_biw_methodology_drc_routed.pb -rpx fpga_au200_biw_methodology_drc_routed.rpx
+Command: report_methodology -file fpga_au200_biw_methodology_drc_routed.rpt -pb fpga_au200_biw_methodology_drc_routed.pb -rpx fpga_au200_biw_methodology_drc_routed.rpx
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:36]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:47]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file fpga_au200_biw_power_routed.rpt -pb fpga_au200_biw_power_summary_routed.pb -rpx fpga_au200_biw_power_routed.rpx
+Command: report_power -file fpga_au200_biw_power_routed.rpt -pb fpga_au200_biw_power_summary_routed.pb -rpx fpga_au200_biw_power_routed.rpx
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:126]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/imports/fpga/mqnic/Alveo/fpga_25g/fpga_au200.xdc:169]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:36]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/constrs_1/new/reset.xdc:47]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+178 Infos, 204 Warnings, 140 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 6011.492 ; gain = 54.211 ; free physical = 152446 ; free virtual = 217011
+INFO: [runtcl-4] Executing : report_route_status -file fpga_au200_biw_route_status.rpt -pb fpga_au200_biw_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file fpga_au200_biw_timing_summary_routed.rpt -pb fpga_au200_biw_timing_summary_routed.pb -rpx fpga_au200_biw_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file fpga_au200_biw_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file fpga_au200_biw_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 6011.492 ; gain = 0.000 ; free physical = 152564 ; free virtual = 217145
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file fpga_au200_biw_bus_skew_routed.rpt -pb fpga_au200_biw_bus_skew_routed.pb -rpx fpga_au200_biw_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force fpga_au200_biw.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu200'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A1)+((~A1)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A2)+((~A2)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 20 net(s) have no routable loads. The problem bus(es) and/or net(s) are core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, and core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: cms_cms_subsystem_0_0
+Generating merged BMM file for the design top 'fpga_au200_biw'...
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: bd_fb99
+CRITICAL WARNING: [Vivado 12-4381] Could not update the BRAM init strings. Check your elf files and their property settings.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 149626400 bits.
+Bitstream compression saved 162637440 bits.
+Bitstream compression saved 162572896 bits.
+Writing bitstream ./fpga_au200_biw.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 5 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:18 ; elapsed = 00:00:55 . Memory (MB): peak = 6011.492 ; gain = 0.000 ; free physical = 152684 ; free virtual = 217284
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 27 22:40:18 2026...

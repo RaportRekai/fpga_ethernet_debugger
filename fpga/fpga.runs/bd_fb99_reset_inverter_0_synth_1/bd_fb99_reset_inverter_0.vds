@@ -1,0 +1,335 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Mar  9 02:03:40 2026
+# Process ID: 2146521
+# Current directory: /home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.runs/bd_fb99_reset_inverter_0_synth_1
+# Command line: vivado -log bd_fb99_reset_inverter_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_fb99_reset_inverter_0.tcl
+# Log file: /home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.runs/bd_fb99_reset_inverter_0_synth_1/bd_fb99_reset_inverter_0.vds
+# Journal file: /home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.runs/bd_fb99_reset_inverter_0_synth_1/vivado.jou
+# Running On: atlas1, OS: Linux, CPU Frequency: 3899.703 MHz, CPU Physical cores: 26, Host memory: 201336 MB
+#-----------------------------------------------------------
+source bd_fb99_reset_inverter_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1326.625 ; gain = 0.023 ; free physical = 44484 ; free virtual = 192723
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_fb99_reset_inverter_0
+Command: synth_design -top bd_fb99_reset_inverter_0 -part xcu200-fsgd2104-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2147145
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2700.637 ; gain = 371.699 ; free physical = 51775 ; free virtual = 199991
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 147.677
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3679.633; parent = 2706.578; children = 973.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_fb99_reset_inverter_0' [/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_49/synth/bd_fb99_reset_inverter_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_2_util_vector_logic' [/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.gen/sources_1/bd/cms/ipshared/3d84/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_2_util_vector_logic' (0#1) [/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.gen/sources_1/bd/cms/ipshared/3d84/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'bd_fb99_reset_inverter_0' (0#1) [/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_49/synth/bd_fb99_reset_inverter_0.v:53]
+WARNING: [Synth 8-3301] Unused top level parameter/generic FPGA_ID
+WARNING: [Synth 8-3301] Unused top level parameter/generic FW_ID
+WARNING: [Synth 8-3301] Unused top level parameter/generic FW_VER
+WARNING: [Synth 8-3301] Unused top level parameter/generic BOARD_ID
+WARNING: [Synth 8-3301] Unused top level parameter/generic BOARD_VER
+WARNING: [Synth 8-3301] Unused top level parameter/generic BUILD_DATE
+WARNING: [Synth 8-3301] Unused top level parameter/generic GIT_HASH
+WARNING: [Synth 8-3301] Unused top level parameter/generic RELEASE_INFO
+WARNING: [Synth 8-3301] Unused top level parameter/generic CMS_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TDMA_BER_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic IF_COUNT
+WARNING: [Synth 8-3301] Unused top level parameter/generic PORTS_PER_IF
+WARNING: [Synth 8-3301] Unused top level parameter/generic SCHED_PER_IF
+WARNING: [Synth 8-3301] Unused top level parameter/generic PORT_MASK
+WARNING: [Synth 8-3301] Unused top level parameter/generic CLK_PERIOD_NS_NUM
+WARNING: [Synth 8-3301] Unused top level parameter/generic CLK_PERIOD_NS_DENOM
+WARNING: [Synth 8-3301] Unused top level parameter/generic PTP_CLOCK_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic PTP_CLOCK_CDC_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic PTP_PORT_CDC_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic PTP_PEROUT_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic PTP_PEROUT_COUNT
+WARNING: [Synth 8-3301] Unused top level parameter/generic EVENT_QUEUE_OP_TABLE_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_QUEUE_OP_TABLE_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_QUEUE_OP_TABLE_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic CQ_OP_TABLE_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic EQN_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_QUEUE_INDEX_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_QUEUE_INDEX_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic CQN_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic EQ_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_QUEUE_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_QUEUE_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic CQ_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_DESC_TABLE_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_DESC_TABLE_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_INDIR_TBL_ADDR_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_SCHEDULER_OP_TABLE_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_SCHEDULER_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TDMA_INDEX_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic PTP_TS_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_CPL_FIFO_DEPTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_CHECKSUM_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_HASH_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_CHECKSUM_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic PFC_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic LFC_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic ENABLE_PADDING
+WARNING: [Synth 8-3301] Unused top level parameter/generic ENABLE_DIC
+WARNING: [Synth 8-3301] Unused top level parameter/generic MIN_FRAME_LENGTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_FIFO_DEPTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_FIFO_DEPTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic MAX_TX_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic MAX_RX_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic TX_RAM_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic RX_RAM_SIZE
+WARNING: [Synth 8-3301] Unused top level parameter/generic DDR_CH
+WARNING: [Synth 8-3301] Unused top level parameter/generic DDR_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXI_DDR_ID_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXI_DDR_MAX_BURST_LEN
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_ID
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_CTRL_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_DMA_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_AXIS_DIRECT_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_AXIS_SYNC_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_AXIS_IF_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic APP_STAT_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic DMA_IMM_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic DMA_IMM_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic DMA_LEN_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic DMA_TAG_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic RAM_ADDR_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic RAM_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic IRQ_INDEX_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIL_CTRL_DATA_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIL_CTRL_ADDR_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIL_APP_CTRL_DATA_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIL_APP_CTRL_ADDR_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIS_ETH_SYNC_DATA_WIDTH_DOUBLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIS_ETH_TX_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIS_ETH_TX_FIFO_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIS_ETH_TX_TS_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIS_ETH_RX_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIS_ETH_RX_FIFO_PIPELINE
+WARNING: [Synth 8-3301] Unused top level parameter/generic STAT_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic STAT_DMA_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic STAT_PCIE_ENABLE
+WARNING: [Synth 8-3301] Unused top level parameter/generic STAT_INC_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic STAT_ID_WIDTH
+WARNING: [Synth 8-3301] Unused top level parameter/generic AXIS_PCIE_DATA_WIDTH
+WARNING: [Synth 8-7129] Port Op2[0] in module util_vector_logic_v2_0_2_util_vector_logic is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2773.543 ; gain = 444.605 ; free physical = 52267 ; free virtual = 200527
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 147.677
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3746.602; parent = 2773.547; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2791.355 ; gain = 462.418 ; free physical = 52267 ; free virtual = 200536
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 147.677
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3764.414; parent = 2791.359; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2791.355 ; gain = 462.418 ; free physical = 52265 ; free virtual = 200538
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 147.677
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3764.414; parent = 2791.359; children = 973.055
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2791.355 ; gain = 0.000 ; free physical = 52259 ; free virtual = 200535
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2879.137 ; gain = 0.000 ; free physical = 52282 ; free virtual = 200577
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2883.105 ; gain = 3.969 ; free physical = 52278 ; free virtual = 200573
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2883.105 ; gain = 554.168 ; free physical = 51806 ; free virtual = 200073
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3824.148; parent = 2851.094; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2883.105 ; gain = 554.168 ; free physical = 51799 ; free virtual = 200065
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3824.148; parent = 2851.094; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2883.105 ; gain = 554.168 ; free physical = 51800 ; free virtual = 200066
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3824.148; parent = 2851.094; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2883.105 ; gain = 554.168 ; free physical = 51802 ; free virtual = 200076
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3824.148; parent = 2851.094; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2883.105 ; gain = 554.168 ; free physical = 51736 ; free virtual = 200077
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1940.637; parent = 1792.960; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3824.148; parent = 2851.094; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 3152.027 ; gain = 823.090 ; free physical = 53657 ; free virtual = 201741
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2346.195; parent = 2198.497; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4125.086; parent = 3152.031; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 3152.027 ; gain = 823.090 ; free physical = 53651 ; free virtual = 201735
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2346.234; parent = 2198.536; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4125.086; parent = 3152.031; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3171.059 ; gain = 842.121 ; free physical = 53636 ; free virtual = 201720
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2346.554; parent = 2198.855; children = 149.797
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4144.117; parent = 3171.062; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3176.996 ; gain = 848.059 ; free physical = 55918 ; free virtual = 204007
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2360.959; parent = 2210.664; children = 150.295
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4150.055; parent = 3177.000; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3176.996 ; gain = 848.059 ; free physical = 55918 ; free virtual = 204008
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2360.959; parent = 2210.664; children = 150.295
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4150.055; parent = 3177.000; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3176.996 ; gain = 848.059 ; free physical = 55926 ; free virtual = 204016
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2360.959; parent = 2210.664; children = 150.295
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4150.055; parent = 3177.000; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3176.996 ; gain = 848.059 ; free physical = 55918 ; free virtual = 204008
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2360.959; parent = 2210.664; children = 150.295
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4150.055; parent = 3177.000; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3176.996 ; gain = 848.059 ; free physical = 55894 ; free virtual = 203984
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2360.959; parent = 2210.664; children = 150.295
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4150.055; parent = 3177.000; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3176.996 ; gain = 848.059 ; free physical = 55879 ; free virtual = 203968
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2360.959; parent = 2210.664; children = 150.295
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4150.055; parent = 3177.000; children = 973.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3176.996 ; gain = 848.059 ; free physical = 55871 ; free virtual = 203960
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2360.959; parent = 2210.664; children = 150.295
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4150.055; parent = 3177.000; children = 973.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3176.996 ; gain = 756.309 ; free physical = 55882 ; free virtual = 203972
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3177.004 ; gain = 848.059 ; free physical = 55882 ; free virtual = 203971
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3184.934 ; gain = 0.000 ; free physical = 55978 ; free virtual = 204068
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3252.496 ; gain = 0.000 ; free physical = 55429 ; free virtual = 203518
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: cf437a85
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 3252.496 ; gain = 1919.934 ; free physical = 55479 ; free virtual = 203569
+INFO: [Common 17-1381] The checkpoint '/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.runs/bd_fb99_reset_inverter_0_synth_1/bd_fb99_reset_inverter_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_fb99_reset_inverter_0, cache-ID = de05310ee91d4d72
+INFO: [Common 17-1381] The checkpoint '/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.runs/bd_fb99_reset_inverter_0_synth_1/bd_fb99_reset_inverter_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_fb99_reset_inverter_0_utilization_synth.rpt -pb bd_fb99_reset_inverter_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  9 02:04:26 2026...

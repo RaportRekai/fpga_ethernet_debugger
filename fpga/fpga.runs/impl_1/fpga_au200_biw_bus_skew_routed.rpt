@@ -1,0 +1,1045 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date              : Sun Sep 27 22:39:23 2026
+| Host              : atlas1 running 64-bit Ubuntu 22.04.5 LTS
+| Command           : report_bus_skew -warn_on_violation -file fpga_au200_biw_bus_skew_routed.rpt -pb fpga_au200_biw_bus_skew_routed.pb -rpx fpga_au200_biw_bus_skew_routed.rpx
+| Design            : fpga_au200_biw
+| Device            : xcu200-fsgd2104
+| Speed File        : -2  PRODUCTION 1.28 03-30-2022
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   100       [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]}]]
+                                              [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]]
+                                                                              Slow              2.560       0.286      2.274
+2   102       [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]}]]
+                                              [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]]
+                                                                              Slow              2.560       0.742      1.818
+3   104       [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]}]]
+                                              [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]]
+                                                                              Slow              2.560       0.518      2.042
+4   106       [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]}]]
+                                              [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]]
+                                                                              Slow              2.560       0.589      1.971
+5   108       [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              2.560       0.653      1.907
+6   110       [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              2.560       0.580      1.980
+7   112       [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              2.560       0.566      1.994
+8   114       [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow              2.560       0.633      1.927
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 5
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_tx_srcclk_out[0]_4
+                      gtwiz_userclk_rx_srcclk_out[0]
+                                            core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.286      2.274
+
+
+Slack (MET) :             2.274ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Endpoint Destination:   core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Reference Source:       core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Reference Destination:  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.328ns
+  Reference Relative Delay:  -0.379ns
+  Relative CRPR:              0.421ns
+  Actual Bus Skew:            0.286ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.727     1.942    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X142Y693       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X142Y693       FDRE (Prop_GFF2_SLICEM_C_Q)
+                                                      0.079     2.021 r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.328     2.349    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[3]
+    SLICE_X142Y693       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         1.804     1.996    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X142Y693       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     1.996    
+    SLICE_X142Y693       FDRE (Setup_CFF2_SLICEM_C_D)
+                                                      0.025     2.021    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           2.349    
+                         clock arrival                          2.021    
+  -------------------------------------------------------------------
+                         relative delay                         0.328    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.532     1.724    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X142Y694       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X142Y694       FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.058     1.782 r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.152     1.934    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[4]
+    SLICE_X142Y694       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         2.036     2.251    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X142Y694       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism              0.000     2.251    
+    SLICE_X142Y694       FDRE (Hold_GFF2_SLICEM_C_D)
+                                                      0.062     2.313    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+  -------------------------------------------------------------------
+                         data arrival                           1.934    
+                         clock arrival                          2.313    
+  -------------------------------------------------------------------
+                         relative delay                        -0.379    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 5
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_tx_srcclk_out[0]
+                      gtwiz_userclk_rx_srcclk_out[0]_4
+                                            core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                            core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.742      1.818
+
+
+Slack (MET) :             1.818ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Endpoint Destination:   core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Reference Source:       core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Reference Destination:  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.887ns
+  Reference Relative Delay:  -0.019ns
+  Relative CRPR:              0.164ns
+  Actual Bus Skew:            0.742ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.648     1.863    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X153Y658       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X153Y658       FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.077     1.940 r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.440     2.380    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[4]
+    SLICE_X153Y658       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.276     1.468    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X153Y658       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism              0.000     1.468    
+    SLICE_X153Y658       FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.025     1.493    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+  -------------------------------------------------------------------
+                         data arrival                           2.380    
+                         clock arrival                          1.493    
+  -------------------------------------------------------------------
+                         relative delay                         0.887    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.445     1.637    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X153Y661       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X153Y661       FDRE (Prop_GFF_SLICEM_C_Q)
+                                                      0.058     1.695 r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.071     1.766    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
+    SLICE_X154Y661       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.508     1.723    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X154Y661       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     1.723    
+    SLICE_X154Y661       FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     1.785    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           1.766    
+                         clock arrival                          1.785    
+  -------------------------------------------------------------------
+                         relative delay                        -0.019    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 5
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_rx_srcclk_out[0]
+                      gtwiz_userclk_tx_srcclk_out[0]_4
+                                            core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                            core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         0.518      2.042
+
+
+Slack (MET) :             2.042ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Endpoint Destination:   core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Reference Source:       core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Reference Destination:  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.954ns
+  Reference Relative Delay:   0.125ns
+  Relative CRPR:              0.311ns
+  Actual Bus Skew:            0.518ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         2.037     2.252    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X142Y693       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X142Y693       FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.077     2.329 r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.371     2.700    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[4]
+    SLICE_X142Y693       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.529     1.721    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X142Y693       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism              0.000     1.721    
+    SLICE_X142Y693       FDRE (Setup_FFF2_SLICEM_C_D)
+                                                      0.025     1.746    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+  -------------------------------------------------------------------
+                         data arrival                           2.700    
+                         clock arrival                          1.746    
+  -------------------------------------------------------------------
+                         relative delay                         0.954    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         1.743     1.935    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X140Y694       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X140Y694       FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.059     1.994 r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.079     2.073    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
+    SLICE_X141Y694       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.671     1.886    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X141Y694       FDRE                                         r  core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     1.886    
+    SLICE_X141Y694       FDRE (Hold_CFF2_SLICEM_C_D)
+                                                      0.062     1.948    core_inst/fifo_0_to_1_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           2.073    
+                         clock arrival                          1.948    
+  -------------------------------------------------------------------
+                         relative delay                         0.125    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]}]] -to [get_cells [list {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 5
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_rx_srcclk_out[0]_4
+                      gtwiz_userclk_tx_srcclk_out[0]
+                                            core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         0.589      1.971
+
+
+Slack (MET) :             1.971ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Endpoint Destination:   core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Reference Source:       core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Reference Destination:  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.588ns
+  Reference Relative Delay:  -0.251ns
+  Relative CRPR:              0.250ns
+  Actual Bus Skew:            0.589ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.475     1.690    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X153Y659       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X153Y659       FDRE (Prop_DFF2_SLICEM_C_Q)
+                                                      0.080     1.770 r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.486     2.256    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[1]
+    SLICE_X153Y660       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.451     1.643    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X153Y660       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     1.643    
+    SLICE_X153Y660       FDRE (Setup_DFF_SLICEM_C_D)
+                                                      0.025     1.668    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           2.256    
+                         clock arrival                          1.668    
+  -------------------------------------------------------------------
+                         relative delay                         0.588    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.276     1.468    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X153Y658       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X153Y658       FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.058     1.526 r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.147     1.673    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[4]
+    SLICE_X153Y658       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.648     1.863    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X153Y658       FDRE                                         r  core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism              0.000     1.863    
+    SLICE_X153Y658       FDRE (Hold_DFF2_SLICEM_C_D)
+                                                      0.061     1.924    core_inst/fifo_1_to_0_inst/packet_token_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+  -------------------------------------------------------------------
+                         data arrival                           1.673    
+                         clock arrival                          1.924    
+  -------------------------------------------------------------------
+                         relative delay                        -0.251    
+
+
+
+Id: 5
+set_bus_skew -from [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_tx_srcclk_out[0]_4
+                      gtwiz_userclk_rx_srcclk_out[0]
+                                            core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         0.653      1.907
+
+
+Slack (MET) :             1.907ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Endpoint Destination:   core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Reference Source:       core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Reference Destination:  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.377ns
+  Reference Relative Delay:  -0.497ns
+  Relative CRPR:              0.221ns
+  Actual Bus Skew:            0.653ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.763     1.978    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X145Y660       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X145Y660       FDRE (Prop_HFF_SLICEL_C_Q)
+                                                      0.079     2.057 r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.366     2.423    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[6]
+    SLICE_X145Y660       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         1.829     2.021    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X145Y660       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.000     2.021    
+    SLICE_X145Y660       FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.025     2.046    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                           2.423    
+                         clock arrival                          2.046    
+  -------------------------------------------------------------------
+                         relative delay                         0.377    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.503     1.695    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X145Y656       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X145Y656       FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.061     1.756 r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.102     1.858    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X145Y656       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         2.078     2.293    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X145Y656       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     2.293    
+    SLICE_X145Y656       FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.062     2.355    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           1.858    
+                         clock arrival                          2.355    
+  -------------------------------------------------------------------
+                         relative delay                        -0.497    
+
+
+
+Id: 6
+set_bus_skew -from [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_rx_srcclk_out[0]_4
+                      gtwiz_userclk_tx_srcclk_out[0]
+                                            core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+                                                                            core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.580      1.980
+
+
+Slack (MET) :             1.980ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Endpoint Destination:   core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Reference Source:       core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Reference Destination:  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.601ns
+  Reference Relative Delay:  -0.227ns
+  Relative CRPR:              0.248ns
+  Actual Bus Skew:            0.580ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.483     1.698    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X154Y671       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X154Y671       FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.081     1.779 r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]/Q
+                         net (fo=1, routed)           0.482     2.261    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[7]
+    SLICE_X153Y671       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.443     1.635    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X153Y671       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
+                         clock pessimism              0.000     1.635    
+    SLICE_X153Y671       FDRE (Setup_CFF2_SLICEM_C_D)
+                                                      0.025     1.660    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
+  -------------------------------------------------------------------
+                         data arrival                           2.261    
+                         clock arrival                          1.660    
+  -------------------------------------------------------------------
+                         relative delay                         0.601    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.307     1.499    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X155Y665       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X155Y665       FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.059     1.558 r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.110     1.668    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X155Y665       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.618     1.833    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X155Y665       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     1.833    
+    SLICE_X155Y665       FDRE (Hold_CFF2_SLICEL_C_D)
+                                                      0.062     1.895    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           1.668    
+                         clock arrival                          1.895    
+  -------------------------------------------------------------------
+                         relative delay                        -0.227    
+
+
+
+Id: 7
+set_bus_skew -from [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_tx_srcclk_out[0]
+                      gtwiz_userclk_rx_srcclk_out[0]_4
+                                            core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/D
+                                                                            core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                                                            Slow         0.566      1.994
+
+
+Slack (MET) :             1.994ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Endpoint Destination:   core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Reference Source:       core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0])
+  Reference Destination:  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0]_4)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.852ns
+  Reference Relative Delay:   0.037ns
+  Relative CRPR:              0.248ns
+  Actual Bus Skew:            0.566ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.651     1.866    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X154Y666       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X154Y666       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     1.945 r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]/Q
+                         net (fo=1, routed)           0.434     2.379    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[11]
+    SLICE_X154Y666       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.310     1.502    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X154Y666       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/C
+                         clock pessimism              0.000     1.502    
+    SLICE_X154Y666       FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.025     1.527    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]
+  -------------------------------------------------------------------
+                         data arrival                           2.379    
+                         clock arrival                          1.527    
+  -------------------------------------------------------------------
+                         relative delay                         0.852    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_tx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y302       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X5Y11 (CLOCK_ROOT)   net (fo=673, routed)         1.447     1.639    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X152Y664       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X152Y664       FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.058     1.697 r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.112     1.809    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[8]
+    SLICE_X152Y664       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_rx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y277       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X5Y10 (CLOCK_ROOT)   net (fo=951, routed)         1.495     1.710    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X152Y664       FDRE                                         r  core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000     1.710    
+    SLICE_X152Y664       FDRE (Hold_CFF2_SLICEM_C_D)
+                                                      0.062     1.772    core_inst/fifo_1_to_0_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
+  -------------------------------------------------------------------
+                         data arrival                           1.809    
+                         clock arrival                          1.772    
+  -------------------------------------------------------------------
+                         relative delay                         0.037    
+
+
+
+Id: 8
+set_bus_skew -from [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 2.560
+Requirement: 2.560ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+gtwiz_userclk_rx_srcclk_out[0]
+                      gtwiz_userclk_tx_srcclk_out[0]_4
+                                            core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.633      1.927
+
+
+Slack (MET) :             1.927ns  (requirement - actual skew)
+  Endpoint Source:        core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Endpoint Destination:   core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Reference Source:       core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_rx_srcclk_out[0])
+  Reference Destination:  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by gtwiz_userclk_tx_srcclk_out[0]_4)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.560ns
+  Endpoint Relative Delay:    0.966ns
+  Reference Relative Delay:   0.111ns
+  Relative CRPR:              0.221ns
+  Actual Bus Skew:            0.633ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         2.087     2.302    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X147Y659       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X147Y659       FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.081     2.383 r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.321     2.704    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X148Y659       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.521     1.713    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X148Y659       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     1.713    
+    SLICE_X148Y659       FDRE (Setup_CFF2_SLICEM_C_D)
+                                                      0.025     1.738    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           2.704    
+                         clock arrival                          1.738    
+  -------------------------------------------------------------------
+                         relative delay                         0.966    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gtwiz_userclk_rx_srcclk_out[0] rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y48  GTYE4_CHANNEL                0.000     0.000 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/RXOUTCLK
+                         net (fo=2, routed)           0.078     0.078    qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gtwiz_userclk_rx_srcclk_out[0]
+    BUFG_GT_X1Y294       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.114     0.192 r  qsfp0_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst/O
+    X4Y11 (CLOCK_ROOT)   net (fo=951, routed)         1.834     2.026    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X146Y660       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X146Y660       FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.058     2.084 r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.090     2.174    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
+    SLICE_X148Y660       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock gtwiz_userclk_tx_srcclk_out[0]_4 rise edge)
+                                                      0.000     0.000 r  
+    GTYE4_CHANNEL_X1Y44  GTYE4_CHANNEL                0.000     0.000 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[29].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST/TXOUTCLK
+                         net (fo=2, routed)           0.085     0.085    qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gtwiz_userclk_tx_srcclk_out[0]
+    BUFG_GT_X1Y285       BUFG_GT (Prop_BUFG_GT_I_O)
+                                                      0.130     0.215 r  qsfp1_phy_quad_inst/phy1.eth_xcvr_phy_1/xcvr_gty_com_usp.eth_xcvr_gty_full_inst/inst/gen_gtwizard_gtye4_top.eth_xcvr_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst/O
+    X4Y10 (CLOCK_ROOT)   net (fo=673, routed)         1.787     2.002    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X148Y660       FDRE                                         r  core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     2.002    
+    SLICE_X148Y660       FDRE (Hold_DFF2_SLICEM_C_D)
+                                                      0.061     2.063    core_inst/fifo_0_to_1_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           2.174    
+                         clock arrival                          2.063    
+  -------------------------------------------------------------------
+                         relative delay                         0.111    
+
+
+

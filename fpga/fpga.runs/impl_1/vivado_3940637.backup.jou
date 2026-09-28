@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Sep 25 02:14:19 2026
+# Process ID: 3940637
+# Current directory: /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1
+# Command line: vivado -log fpga_au200_biw.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga_au200_biw.tcl -notrace
+# Log file: /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.vdi
+# Journal file: /home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/vivado.jou
+# Running On: atlas1, OS: Linux, CPU Frequency: 3899.984 MHz, CPU Physical cores: 27, Host memory: 201336 MB
+#-----------------------------------------------------------
+source fpga_au200_biw.tcl -notrace

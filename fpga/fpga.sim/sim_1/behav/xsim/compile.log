@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.srcs/sources_1/new/analyse_stored_packet.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module analyse_stored_packet
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.srcs/sources_1/new/bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.srcs/sources_1/new/packet_store_forward.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module packet_store_forward
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/dan/corundum/fpga/mqnic/Alveo/fpga_25g/fpga_AU200/fpga.srcs/sim_1/new/tb_store_and_forward.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_packet_store_forward

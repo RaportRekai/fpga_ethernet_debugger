@@ -1,0 +1,261 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Sep 18 14:52:34 2026
+# Process ID: 1339094
+# Current directory: /home/dan/CFH/CFH2.0/CFH2.0
+# Command line: vivado
+# Log file: /home/dan/CFH/CFH2.0/CFH2.0/vivado.log
+# Journal file: /home/dan/CFH/CFH2.0/CFH2.0/vivado.jou
+# Running On: atlas1, OS: Linux, CPU Frequency: 1199.982 MHz, CPU Physical cores: 23, Host memory: 201336 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/dan/CFH/CFH2.0/CFH2.0/fpga.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+current_hw_device [get_hw_devices xcu200_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu200_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_methodology -checks [get_methodology_checks {TIMING-6 TIMING-7 LUTAR-1}]
+set biw_tx_a [get_clocks -filter {NAME == "gtwiz_userclk_tx_srcclk_out[0]"}]
+set biw_rx_b [get_clocks -filter {NAME == "gtwiz_userclk_rx_srcclk_out[0]_4"}]
+set biw_tx_b [get_clocks -filter {NAME == "gtwiz_userclk_tx_srcclk_out[0]_4"}]
+set biw_rx_a [get_clocks -filter {NAME == "gtwiz_userclk_rx_srcclk_out[0]"}]
+report_timing -from $biw_tx_a -to $biw_rx_b -max_paths 5
+report_timing -from $biw_tx_b -to $biw_rx_a -max_paths 5
+close [ open /home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/sources_1/new/biw_fifo_reset_ctrl.v w ]
+add_files /home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/sources_1/new/biw_fifo_reset_ctrl.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+refresh_design
+report_timing -delay_type max -slack_lesser_than 0 -max_paths 10
+report_methodology -checks [get_methodology_checks {TIMING-6 TIMING-7 LUTAR-1}]
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2022} -strategy Performance_ExplorePostRoutePhysOpt -report_strategy {Performance Explore Reports}
+launch_runs impl_2 -jobs 50
+wait_on_run impl_2
+open_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 65
+wait_on_run impl_2
+report_methodology -checks [get_methodology_checks {TIMING-6 TIMING-7 LUTAR-1}]
+report_bus_skew -warn_on_violation
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_2/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 65
+wait_on_run synth_1
+set_property strategy Performance_Explore [get_runs impl_1]
+launch_runs impl_1 -jobs 65
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+close_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 65
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 65
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name packet_token_fifo
+set_property -dict [list \
+  CONFIG.Component_Name {packet_token_fifo} \
+  CONFIG.Fifo_Implementation {Independent_Clocks_Distributed_RAM} \
+  CONFIG.Input_Data_Width {1} \
+  CONFIG.Input_Depth {32} \
+  CONFIG.Performance_Options {First_Word_Fall_Through} \
+] [get_ips packet_token_fifo]
+generate_target {instantiation_template} [get_files /home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/sources_1/ip/packet_token_fifo/packet_token_fifo.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/sources_1/ip/packet_token_fifo/packet_token_fifo.xci]
+catch { config_ip_cache -export [get_ips -all packet_token_fifo] }
+export_ip_user_files -of_objects [get_files /home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/sources_1/ip/packet_token_fifo/packet_token_fifo.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/sources_1/ip/packet_token_fifo/packet_token_fifo.xci]
+launch_runs packet_token_fifo_synth_1 -jobs 65
+wait_on_run packet_token_fifo_synth_1
+export_simulation -of_objects [get_files /home/dan/CFH/CFH2.0/CFH2.0/fpga.srcs/sources_1/ip/packet_token_fifo/packet_token_fifo.xci] -directory /home/dan/CFH/CFH2.0/CFH2.0/fpga.ip_user_files/sim_scripts -ip_user_files_dir /home/dan/CFH/CFH2.0/CFH2.0/fpga.ip_user_files -ipstatic_source_dir /home/dan/CFH/CFH2.0/CFH2.0/fpga.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/dan/CFH/CFH2.0/CFH2.0/fpga.cache/compile_simlib/modelsim} {questa=/home/dan/CFH/CFH2.0/CFH2.0/fpga.cache/compile_simlib/questa} {xcelium=/home/dan/CFH/CFH2.0/CFH2.0/fpga.cache/compile_simlib/xcelium} {vcs=/home/dan/CFH/CFH2.0/CFH2.0/fpga.cache/compile_simlib/vcs} {riviera=/home/dan/CFH/CFH2.0/CFH2.0/fpga.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+open_example_project -force -dir /home/dan/CFH/CFH2.0 [get_ips  packet_token_fifo]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 65
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcu200_0]
+set_property PROGRAM.FILE {/home/dan/CFH/CFH2.0/CFH2.0/fpga.runs/impl_1/fpga_au200_biw.bit} [get_hw_devices xcu200_0]
+program_hw_devices [get_hw_devices xcu200_0]
+refresh_hw_device [lindex [get_hw_devices xcu200_0] 0]
+archive_project /home/dan/Documents/debugger_8888.xpr.zip -force -include_local_ip_cache -include_config_settings

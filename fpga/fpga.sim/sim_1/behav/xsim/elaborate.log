@@ -1,0 +1,16 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_packet_store_forward_behav xil_defaultlib.tb_packet_store_forward xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.analyse_stored_packet_default
+Compiling module xil_defaultlib.bram
+Compiling module xil_defaultlib.packet_store_forward(KEEP_WIDTH=...
+Compiling module xil_defaultlib.tb_packet_store_forward
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_packet_store_forward_behav
